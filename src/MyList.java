@@ -49,6 +49,9 @@ public class MyList {
         return listArray[x];
     }
 
+    /**
+     * 底层数组扩容
+     * */
     private int[] createNewArray(int[] array, int s){
         double x = 0;
         if(s>0){
@@ -61,14 +64,32 @@ public class MyList {
         }
         return array;
     }
+
+    /**
+     * 删除某一个位置的元素
+     * */
+    public int remove(int x){
+        int ret=listArray[x];
+        for (int i=x;i<size;i++){
+            listArray[i]=listArray[i+1];
+        }
+        size--;
+        return ret;
+    }
 }
 
 class d{
     public static void main(String[] args) {
         MyList  myList= new MyList();
-        for (int x=0;x<2000000000;x++){
+        for (int x=0;x<3;x++){
             myList.add(x);
-            System.out.println(myList.length());
+           // System.out.println(myList.length());
+        }
+
+        myList.remove(2);
+        System.out.println(myList.length());
+        for (int x=0;x<myList.length();x++){
+            System.out.println(myList.get(x));
         }
     }
 }
