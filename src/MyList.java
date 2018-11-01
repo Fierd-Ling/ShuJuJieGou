@@ -59,9 +59,9 @@ public class MyList<E> {
             // 实际存储的长度/数组定义的长度，当实际存储的长度达到数组自定义的75%就扩容，每次扩容为 原来的1.5
             x=(double) s/array.length;
         }
-        if(x>=0.5){
-            int newLength= (int) (s*2);
-            array =Arrays.copyOf(array,newLength);
+        if(x>=0.8){
+            // 扩大到2倍
+            array =Arrays.copyOf(array,listArray.length*2);
         }
         return array;
     }
@@ -70,12 +70,10 @@ public class MyList<E> {
      * 减少数组容量
      * */
     private void cutArray(){
-        double flag=(double) size/listArray.length;
-        if(flag<0.5){
-            // 缩减的长度是原来的三分之一
-            int newLength=listArray.length/2;
-            listArray=Arrays.copyOf(listArray,newLength);
-            System.out.println("arrays长度"+newLength);
+         // 数组实际存储的数据只有目前数组长度的1/4
+        if(size<=listArray.length/4){
+            // 缩减到原来数组的一半，防止时间复杂度震荡
+            listArray=Arrays.copyOf(listArray,listArray.length/2);
         }
     }
 
@@ -100,14 +98,14 @@ class d{
     public static void main(String[] args) {
         //  采用泛型数组 泛型 中不能有基本数据类型
         MyList<Integer>  myList= new MyList();
-        for (int x=0;x<10;x++){
+        for (int x=0;x<1000;x++){
             myList.add(x);
         }
         for(int z=0;z<myList.length();z++){
             System.out.println(myList.get(z));
         }
         System.out.println();
-        for (int x=0;x<7;x++){
+        for (int x=0;x<700;x++){
             myList.remove(2);
         }
         for(int z=0;z<myList.length();z++){
