@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author ZhongLingYun
@@ -58,24 +59,39 @@ public class MyList<E> {
             // 实际存储的长度/数组定义的长度，当实际存储的长度达到数组自定义的75%就扩容，每次扩容为 原来的1.5
             x=(double) s/array.length;
         }
-        if(x>=0.75){
-            int newLength= (int) (s*1.5);
+        if(x>=0.5){
+            int newLength= (int) (s*2);
             array =Arrays.copyOf(array,newLength);
         }
         return array;
     }
 
     /**
+     * 减少数组容量
+     * */
+    private void cutArray(){
+        double flag=(double) size/listArray.length;
+        if(flag<0.5){
+            // 缩减的长度是原来的三分之一
+            int newLength=listArray.length/2;
+            listArray=Arrays.copyOf(listArray,newLength);
+            System.out.println("arrays长度"+newLength);
+        }
+    }
+
+    /**
      * 删除某一个位置的元素
      * */
-    public E remove(int x){
+    public synchronized E remove(int x){
         E ret=listArray[x];
-        for (int i=x;i<size;i++){
+        for (int i=x;i<size-1;i++){
             listArray[i]=listArray[i+1];
         }
         size--;
         // 确保Java回收机制可以回收
         listArray[size]=null;
+        // 删除数据之后减少数组长度
+        cutArray();
         return ret;
     }
 }
@@ -86,13 +102,16 @@ class d{
         MyList<Integer>  myList= new MyList();
         for (int x=0;x<10;x++){
             myList.add(x);
-           // System.out.println(myList.length());
         }
-
-        myList.remove(2);
-        System.out.println(myList.length());
-        for (int x=0;x<myList.length();x++){
-            System.out.println(myList.get(x));
+        for(int z=0;z<myList.length();z++){
+            System.out.println(myList.get(z));
+        }
+        System.out.println();
+        for (int x=0;x<7;x++){
+            myList.remove(2);
+        }
+        for(int z=0;z<myList.length();z++){
+            System.out.println(myList.get(z));
         }
     }
 }
