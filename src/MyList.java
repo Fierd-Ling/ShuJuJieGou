@@ -71,7 +71,7 @@ public class MyList<E> {
      * */
     private void cutArray(){
          // 数组实际存储的数据只有目前数组长度的1/4
-        if(size<=listArray.length/4){
+        if(size<=listArray.length/4 ){
             // 缩减到原来数组的一半，防止时间复杂度震荡
             listArray=Arrays.copyOf(listArray,listArray.length/2);
         }
@@ -94,19 +94,19 @@ public class MyList<E> {
     }
 }
 
-class d{
+class Test{
     public static void main(String[] args) {
         //  采用泛型数组 泛型 中不能有基本数据类型
         MyList<Integer>  myList= new MyList();
-        for (int x=0;x<1000;x++){
+        for (int x=0;x<10;x++){
             myList.add(x);
         }
         for(int z=0;z<myList.length();z++){
             System.out.println(myList.get(z));
         }
-        System.out.println();
-        for (int x=0;x<700;x++){
-            myList.remove(2);
+        // 移除9个数据
+        for (int x=0;x<9;x++){
+            myList.remove(0);
         }
         for(int z=0;z<myList.length();z++){
             System.out.println(myList.get(z));
