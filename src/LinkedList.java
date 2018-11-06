@@ -7,8 +7,8 @@
 public class LinkedList<E> {
 
     private class Node{
-        public E e;
-        public Node next;
+        private E e;
+        private Node next;
 
         public Node(E e,Node next){
             this.e=e;
@@ -23,29 +23,21 @@ public class LinkedList<E> {
 
     private int size;
 
-    private Node head;
-
     /**
-     * 头部添加
+     * 虚拟头结点，不存储数据，只存储下一个节点
      * */
-    public void add(E e){
-        // 在头部添加只要把原来头部的node作当前node下一个节点就可以
-        /*Node node= new Node(e);
-        node.next=head;
-        head=node;*/
-        head =new Node(e,head);
-        size++;
-    }
+    private Node dummyHead=new Node(null,null);
 
     /**
      * 任意索引位置添加
      * */
     public void add(E e,int position){
-        if(position==0){
-            add(e);
-        }else {
-            Node point=head;
-            for(int x=0;x<position-1;x++){
+        if(position<0||position>size){
+            // 可以在尾部插入
+            throw new RuntimeException("索引越界");
+        }
+            Node point=dummyHead;
+            for(int x=0;x<position;x++){
                 point=point.next;
             }
             // 在1234567中的3的位置插入i,2的后面就是i，i的后面就是3其余的不变
@@ -56,17 +48,6 @@ public class LinkedList<E> {
             //point.next=node;
             point.next=new Node(e,point.next);
             size++;
-        }
-    }
-
-    /**
-     * 获取链头元素
-     * */
-    public E get(){
-        E e= head.e;
-        head=head.next;
-        size--;
-        return e;
     }
 
     /**
@@ -76,7 +57,7 @@ public class LinkedList<E> {
         if(position<0||position>=size){
             throw new RuntimeException("索引越界");
         }
-        Node point=head;
+        Node point=dummyHead;
         for (int x=0;x<position-1;x++){
             point=point.next;
         }
@@ -88,6 +69,21 @@ public class LinkedList<E> {
             point.next=point.next.next;
         }
         return e;
+    }
+
+    /**
+     * 头部添加
+     * */
+    public void add(E e){
+        // 在头部添加只要把原来头部的node作当前node下一个节点就可以
+        /*Node node= new Node(e);
+        node.next=head;
+        head=node;*/
+        add(e,0);
+    }
+
+    public E get(){
+        return get(0);
     }
 
     /**
@@ -105,15 +101,15 @@ public class LinkedList<E> {
 class TestLinkedList{
     public static void main(String[] args) {
         LinkedList<Integer> linkedList= new LinkedList<>();
-        for (int x=0;x<30;x++){
+        for (int x=0;x<3;x++){
             linkedList.add(x);
         }
-        System.out.println(linkedList.get(4));
-        System.out.println("-----------");
-        linkedList.add(100,20);
-        for(int x=0;x<30;x++){
+        linkedList.add(33333,3);
+        for (int x=0;x<linkedList.getSize();x++){
             System.out.println(linkedList.get());
         }
+
+
 
     }
 }
