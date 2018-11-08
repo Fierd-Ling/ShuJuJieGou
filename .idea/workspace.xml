@@ -41,12 +41,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9534" />
+          <entry key="java" value="9863" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9534" />
+          <entry key="JAVA" value="9863" />
         </counts>
       </usages-collector>
     </session>
@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="217">
+              <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
               <folding>
                 <element signature="e#1699#1700#0" expanded="true" />
                 <element signature="e#1729#1730#0" expanded="true" />
@@ -232,12 +232,12 @@
       <workItem from="1541466537400" duration="728000" />
       <workItem from="1541467366729" duration="21618000" />
       <workItem from="1541513524691" duration="5473000" />
-      <workItem from="1541658832594" duration="536000" />
+      <workItem from="1541658832594" duration="2096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71097000" />
+    <option name="totallyTimeSpent" value="72582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,7 +263,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.65153736" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932525" weight="0.20729928" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49932525" visible="true" weight="0.34306568" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39238653" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -297,7 +297,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.65153736" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932525" weight="0.20729928" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932525" weight="0.37810218" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39238653" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -380,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        <state relative-caret-position="217">
+          <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
           <folding>
             <element signature="e#1699#1700#0" expanded="true" />
             <element signature="e#1729#1730#0" expanded="true" />

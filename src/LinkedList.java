@@ -5,6 +5,10 @@
  * @date 2018/11/622:33
  */
 public class LinkedList<E> {
+    /**
+     * 链表中的节点
+     * 链表就是一个递归的对象思想，每个对象里面包含下一个对象
+     * */
     private class Node{
         private E e;
 
@@ -74,10 +78,11 @@ public class LinkedList<E> {
         if(size==0){
             throw  new RuntimeException("链表中没有数据");
         }
-        E e=dummyHead.next.e;
+        /*E e=dummyHead.next.e;
         dummyHead.next=dummyHead.next.next;
         size--;
-        return e;
+        return e;*/
+        return get(0);
     }
 
     /**
@@ -87,15 +92,34 @@ public class LinkedList<E> {
         if(size==0){
             throw  new RuntimeException("链表中没有数据");
         }
-        Node point=dummyHead;
+        /*Node point=dummyHead;
         for(int x=0;x<size-1;x++){
            point=point.next;
         }
         E e=point.next.e;
         point.next=null;
         size--;
+        return e;*/
+        return get(size-1);
+    }
+
+    /**
+     * 获取任意位置的值
+     * */
+    public E get(int position){
+        if(position<0||position>=size){
+            throw new RuntimeException("索引越界");
+        }
+        Node point=dummyHead;
+        for(int x=0;x<position;x++){
+            point=point.next;
+        }
+        E e=point.next.e;
+        point.next=point.next.next;
+        size--;
         return e;
     }
+
 
     /**
      *链表是否为空
@@ -118,11 +142,12 @@ class TestLinkedList{
         for (int x=0;x<10;x++){
             linkedList.addAtHead(x);
         }
-        linkedList.add(10000,2);
-        for (int x=0;x<11;x++){
+        //linkedList.add(10000,2);
+        System.out.println(linkedList.get(3));
+        System.out.println("--------------------------");
+        for (int x=0;x<9;x++){
             Thread.sleep(100);
-            System.out.println(linkedList.getAtEnd());
+            System.out.println(linkedList.getAtHead());
         }
-
     }
 }
