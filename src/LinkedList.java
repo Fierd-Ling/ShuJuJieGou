@@ -33,23 +33,39 @@ public class LinkedList<E> {
      * */
     public void addAtHead(E e){
         // 假设null,1,2,3,4在头部插入i变为null,i,1,2,3,4
-        dummyHead.next=new Node(e,dummyHead.next);
-        size++;
+        /*dummyHead.next=new Node(e,dummyHead.next);
+        size++;*/
+        add(e,0);
     }
 
     /**
      * 在链表尾部插入
      * */
     public void addAtEnd(E e){
-        Node point =dummyHead;
+       /* Node point =dummyHead;
         for(int x=0;x<size;x++){
             point=point.next;
         }
         point.next=new Node(e);
-        size++;
+        size++;*/
+       add(e,size);
     }
 
-    // TODO 随机插入
+    /**
+     * 随机位置插入
+     * */
+    public void add(E e,int position){
+        if(position<0||position>size){
+            throw new RuntimeException("索引越界");
+        }
+        Node point =dummyHead;
+        for(int x=0;x<position;x++){
+            point=point.next;
+        }
+        point.next=new Node(e,point.next);
+        size++;
+
+    }
 
     /**
      * 从头部取出一个元素
@@ -102,6 +118,7 @@ class TestLinkedList{
         for (int x=0;x<10;x++){
             linkedList.addAtHead(x);
         }
+        linkedList.add(10000,2);
         for (int x=0;x<11;x++){
             Thread.sleep(100);
             System.out.println(linkedList.getAtEnd());
