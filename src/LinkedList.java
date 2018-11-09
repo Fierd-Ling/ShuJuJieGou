@@ -115,9 +115,25 @@ public class LinkedList<E> {
             point=point.next;
         }
         E e=point.next.e;
-        point.next=point.next.next;
+        Node retNode=point.next;
+        point.next=retNode.next;
+        retNode.next=null;
         size--;
         return e;
+    }
+
+    /**
+     * 查询是否存在某个元素
+     * */
+    public boolean select(E e){
+        Node point=dummyHead;
+        while(point.next!=null){
+            point=point.next;
+            if(point.e.equals(e)){
+                return true;
+            }
+        }
+        return false;
     }
 
 
@@ -142,12 +158,14 @@ class TestLinkedList{
         for (int x=0;x<10;x++){
             linkedList.addAtHead(x);
         }
+        linkedList.get(2);
         //linkedList.add(10000,2);
-        System.out.println(linkedList.get(3));
-        System.out.println("--------------------------");
+       /* *//*System.out.println(linkedList.get(3));*//*
+        System.out.println("--------------------------");*/
         for (int x=0;x<9;x++){
             Thread.sleep(100);
             System.out.println(linkedList.getAtHead());
         }
+        //System.out.println(linkedList.select(7));
     }
 }
