@@ -1,10 +1,12 @@
+package stack;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
  * @author ZhongLingYun
- * @Title: StackByLinkedList
+ * @Title: stack.StackByLinkedList
  * @Description: 通过链表实现栈
  * @date 2018/11/99:35
  */
@@ -63,7 +65,7 @@ public class StackByLinkedList<E> {
 class TestStackByLinkedList{
 
     public static void main(String[] args) throws InterruptedException {
-       /* StackByLinkedList<Integer> stackByLinkedList=new StackByLinkedList<>();
+       /* stack.StackByLinkedList<Integer> stackByLinkedList=new stack.StackByLinkedList<>();
         for(int x=0;x<100;x++){
             stackByLinkedList.push(x);
         }
@@ -73,7 +75,7 @@ class TestStackByLinkedList{
             Thread.sleep(300);
             System.out.println(stackByLinkedList.get());
         }*/
-      /*  Stack<Integer> stack= new Stack<>();
+      /*  stack.Stack<Integer> stack= new stack.Stack<>();
        for(int x=0;x<100;x++){
            stack.add(x);
        }

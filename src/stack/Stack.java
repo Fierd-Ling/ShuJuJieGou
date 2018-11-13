@@ -1,8 +1,10 @@
+package stack;
+
 import java.util.Arrays;
 
 /**
  * @author ZhongLingYun
- * @Title: Stack
+ * @Title: stack.Stack
  * @Description: 自己实现一个栈
  * @date 2018/11/29:40
  */

@@ -1,7 +1,8 @@
+package queue;
 
 /**
  * @author ZhongLingYun
- * @Title: LoopQueue
+ * @Title: queue.LoopQueue
  * @Description: 循环队列
  * @date 2018/11/511:07
  */

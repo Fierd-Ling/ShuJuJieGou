@@ -1,3 +1,5 @@
+package list;
+
 /**
  * @author ZhongLingYun
  * @Title: LinkedList

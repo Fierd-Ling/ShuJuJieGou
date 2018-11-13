@@ -1,6 +1,8 @@
+package queue;
+
 /**
  * @author ZhongLingYun
- * @Title: LinkedQueue
+ * @Title: queue.LinkedQueue
  * @Description: 链表实现队列
  * @date 2018/11/129:33
  */
@@ -48,7 +50,7 @@ public class LinkedQueue<E> {
 
     public E get(){
         if(head==null){
-            return null;
+            throw new RuntimeException("队列为空");
         }
         E e=head.e;
         // 拿数据从头拿，头下移一个
@@ -66,7 +68,7 @@ class TestLinkedQueue{
             linkedQueue.push(x);
         }
         //System.out.println(linkedQueue.getSize());
-        for (int x=0;x<100;x++){
+        for (int x=0;x<102;x++){
             System.out.println(linkedQueue.get());
         }
     }

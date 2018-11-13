@@ -1,8 +1,10 @@
+package queue;
+
 import java.util.Arrays;
 
 /**
  * @author ZhongLingYun
- * @Title: MyQueue
+ * @Title: queue.MyQueue
  * @Description: queue的底层实现
  * @date 2018/11/59:34
  */

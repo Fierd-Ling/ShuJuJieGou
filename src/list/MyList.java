@@ -1,9 +1,10 @@
+package list;
+
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * @author ZhongLingYun
- * @Title: MyList 修改为泛型数组
+ * @Title: list.MyList 修改为泛型数组
  * @Description: list
  * @date 2018/10/319:14
  */

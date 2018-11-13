@@ -1,9 +1,11 @@
+package LeetCode;
+
 import java.util.Scanner;
 import java.util.Stack;
 
 /**
  * @author ZhongLingYun
- * @Title: Solution
+ * @Title: LeetCode.Solution
  * @Description: 有效括号问题
  * @date 2018/11/213:59
  */
@@ -26,6 +28,14 @@ public class Solution {
                    if(c=='}'||c==']'||c==')'){
                        // 从栈中拿出一个
                        char pop=stack.pop();
+                        if(!(c=='}'&&pop=='{')){
+                            if(!(c==')'&&pop=='(')){
+                                if(!(c==']'&&pop=='[')){
+                                    System.out.println("不符合匹配规则");
+                                    return;
+                                }
+                            }
+                        }
                    }
                 }
             }
