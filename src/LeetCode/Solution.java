@@ -5,7 +5,7 @@ import java.util.Stack;
 
 /**
  * @author ZhongLingYun
- * @Title: LeetCode.Solution
+ * @Title: Solution
  * @Description: 有效括号问题
  * @date 2018/11/213:59
  */
