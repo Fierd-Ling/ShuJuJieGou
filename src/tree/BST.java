@@ -87,8 +87,9 @@ public class BST<E extends Comparable<E>> {
             }
         }
         size++;
-        //System.out.println(point.toString());
+        System.out.println(point.toString());
     }
+
 
     /**
      * 判断是否存在某一个元素
@@ -146,21 +147,16 @@ public class BST<E extends Comparable<E>> {
 class TestBST{
     public static void main(String[] args) throws InterruptedException {
         BST<Integer> b=new BST<>();
-        long begin=System.currentTimeMillis();
-        for(int x=0;x<3000000;x++){
+        for(int x=0;x<30;x++){
             int z= (int) (Math.random()*10000+1);
-            b.add(z);
             b.exist(b.root,z);
         }
-        long center=System.currentTimeMillis();
-        System.out.println(center-begin);
         System.out.println();
         for(int x=0;x<3000000;x++){
             int z= (int) (Math.random()*10000000+1);
             b.add(z);
             b.exist(z);
         }
-        System.out.println(System.currentTimeMillis()-center);
     }
 
 }
