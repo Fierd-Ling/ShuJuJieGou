@@ -35,7 +35,7 @@ public class BST<E extends Comparable<E>> {
 
     private int size;
 
-    private Node root;
+    public Node root;
 
     public BST(){
         size=0;
@@ -87,7 +87,7 @@ public class BST<E extends Comparable<E>> {
             }
         }
         size++;
-        System.out.println(point.toString());
+        //System.out.println(point.toString());
     }
 
     /**
@@ -126,18 +126,41 @@ public class BST<E extends Comparable<E>> {
         return false;
     }
 
+    public boolean exist(Node node,E e){
+        if(node==null){
+            return false;
+        }
+        if(node.e.equals(e)){
+            return true;
+        }
+        // 节点大于比较数据
+        if(node.e.compareTo(e)>0){
+            return exist(node.left,e);
+        }else {
+            return exist(node.right,e);
+        }
+    }
+
 }
 
 class TestBST{
     public static void main(String[] args) throws InterruptedException {
         BST<Integer> b=new BST<>();
-        for(int x=0;x<500000000;x++){
-            int z= (int) (Math.random()*1000000000+1);
-            System.out.println(z);
+        long begin=System.currentTimeMillis();
+        for(int x=0;x<3000000;x++){
+            int z= (int) (Math.random()*10000+1);
             b.add(z);
-            System.out.println(b.exist(z));
+            b.exist(b.root,z);
         }
-
+        long center=System.currentTimeMillis();
+        System.out.println(center-begin);
+        System.out.println();
+        for(int x=0;x<3000000;x++){
+            int z= (int) (Math.random()*10000000+1);
+            b.add(z);
+            b.exist(z);
+        }
+        System.out.println(System.currentTimeMillis()-center);
     }
 
 }
