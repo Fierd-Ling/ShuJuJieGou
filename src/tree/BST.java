@@ -1,5 +1,8 @@
 package tree;
 
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  * @author ZhongLingYun
  * @Title: BST
@@ -37,75 +40,103 @@ public class BST<E extends Comparable<E>> {
     public BST(){
         size=0;
         // 防止while出现null exception
-        root=new Node(null);
+        root=null;
     }
 
     public int getSize(){
         return size;
     }
 
-    public void systemOut(){
+    /**
+     * 添加元素
+     * */
+    public void add(E e) {
         Node point=root;
-        while (point.right!=null||point.left!=null){
-            System.out.println(point.toString());
-            point=point.left;
+        // 树里面没有元素
+        if(size==0){
+            point=new Node(e);
+            root=point;
         }
+        else {
+            while(point!=null&&(point.left!=null||point.right!=null)){
+                E pointE =point.e;
+                // 当前节点数值大于需要添加节点,添加元素在当前节点的左边
+                if(pointE.compareTo(e)>0){
+                    // 先判断子节点是否为空
+                    if(point.left==null){
+                        // 当前子节点就是插入元素需要的存储位置
+                        point.left=new Node(e);
+                        break;
+                    }else {
+                        point=point.left;
+                    }
+                }else {
+                    if(point.right==null){
+                        point.right=new Node(e);
+                        break;
+                    }else {
+                        point=point.right;
+                    }
+                }
+            }
+            E compare=point.e;
+            if(compare.compareTo(e)>0){
+                point.left=new Node(e);
+            }else{
+                point.right=new Node(e);
+            }
+        }
+        size++;
         System.out.println(point.toString());
     }
 
-
-    public void add(E e) {
+    /**
+     * 判断是否存在某一个元素
+     * */
+    public boolean exist(E e){
+        if(size==0){
+            return false;
+        }
         Node point=root;
-        // 有子节点
-        while(point!=null&&(point.left!=null||point.right!=null)){
-            E compare=point.e;
-            if(compare.compareTo(e)>0){
+        while(point!=null&&(point.right!=null||point.left!=null)){
+            if(point.e.equals(e)){
+                return true;
+            }
+            // 存储节点元素大于比较元素
+            if(point.e.compareTo(e)>0){
+                if(point.left==null){
+                    // 左孩子为null
+                    return false;
+                }
                 point=point.left;
-            }else {
+            }else{
+                if(point.right==null){
+                    return false;
+                }
                 point=point.right;
             }
         }
         if(point==null){
-            if(size==0){
-                point.e=e;
-                root=point;
-            }else {
-                point=new Node(e);
-            }
-        }else{
-            if(size==0){
-                point.e=e;
-                root=point;
-            }else {
-                E compare =point.e;
-                if(compare.compareTo(e)>0){
-                    point.left=new Node(e);
-                }else {
-                    point.right=new Node(e);
-                }
-            }
+            // 当前指向已经null
+            return false;
         }
-        System.out.println(point.toString());
-    size++;
+        if(point.e.equals(e)){
+            return true;
+        }
+        return false;
     }
+
 }
 
 class TestBST{
     public static void main(String[] args) throws InterruptedException {
         BST<Integer> b=new BST<>();
-       /* for (int x=1;x<11;x++){
-            if(x!=5&&x!=8){
-                b.add(x);
-            }
-        }*/
-        System.out.println();
-
-        b.add(8);
-        b.add(6);
-        b.add(10);
-        b.add(0);
-        b.add(140);
-        // TODO 待解决逻辑问题
+        for(int x=0;x<500000000;x++){
+            int z= (int) (Math.random()*1000000000+1);
+            System.out.println(z);
+            b.add(z);
+            System.out.println(b.exist(z));
+        }
 
     }
 
