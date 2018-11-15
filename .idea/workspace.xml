@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10918d5a-6eb9-42ca-a4cc-706b9018f30e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/DiGui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/LoopQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/MyList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/MyQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/StackByLinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/StackByLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestLinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestMyQueue$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestMyQueue$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestMyQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShuJuJieGou/TestStackByLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,40 +19,45 @@
     <session id="-217952503">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="4" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.44" value="3" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="59" />
+          <entry key="gitignore" value="2" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="59" />
+          <entry key="Git file" value="2" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="14962" />
+          <entry key="gitignore" value="13" />
+          <entry key="java" value="15006" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14962" />
+          <entry key="Git file" value="13" />
+          <entry key="JAVA" value="15006" />
         </counts>
       </usages-collector>
     </session>
@@ -84,17 +67,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-              <folding>
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShuJuJieGou.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -135,6 +128,7 @@
         <option value="$PROJECT_DIR$/src/list/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/BST.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -144,7 +138,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -155,12 +149,64 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkedQueue.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="BST.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542191921067" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542192093738" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/新建文件夹/fiter/20457-钟凌云-中台后端" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -271,12 +317,16 @@
       <workItem from="1542109301326" duration="2386000" />
       <workItem from="1542158355608" duration="3694000" />
       <workItem from="1542176739058" duration="1244000" />
-      <workItem from="1542178070158" duration="11046000" />
+      <workItem from="1542178070158" duration="11250000" />
+      <workItem from="1542244864690" duration="1486000" />
+      <workItem from="1542249267303" duration="132000" />
+      <workItem from="1542249422409" duration="49000" />
+      <workItem from="1542249495616" duration="240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118922000" />
+    <option name="totallyTimeSpent" value="121033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,10 +338,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" weight="0.19905533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.2091768" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -302,8 +352,8 @@
       <window_info anchor="bottom" id="JRebel Console" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.6510949" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865046" weight="0.270073" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.27737227" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865046" weight="0.46569344" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.27737227" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329429" />
@@ -325,7 +375,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" weight="0.19905533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.19905533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -336,8 +386,8 @@
       <window_info anchor="bottom" id="JRebel Console" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.6510949" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865046" weight="0.270073" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.08759124" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865046" weight="0.46569344" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.27737227" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329429" />
@@ -346,7 +396,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932525" weight="0.1810219" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932525" visible="true" weight="0.1810219" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -393,13 +443,6 @@
     <entry file="file://$PROJECT_DIR$/src/LinkedList.java" />
     <entry file="file://$PROJECT_DIR$/src/RemoveValue.java" />
     <entry file="file://$PROJECT_DIR$/src/DiGui.java" />
-    <entry file="file://$PROJECT_DIR$/src/queue/LinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/list/MyList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -428,17 +471,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/queue/LoopQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/ShuJuJieGou.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://D:/Java/jdk/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -481,10 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="696" column="15" selection-start-line="696" selection-start-column="15" selection-end-line="696" selection-end-column="15" />
-          <folding>
-            <element signature="e#33467#33468#0" expanded="true" />
-            <element signature="e#33522#33523#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,12 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="1232" column="22" selection-start-line="1232" selection-start-column="22" selection-end-line="1232" selection-end-column="22" />
-          <folding>
-            <element signature="e#46394#46395#0" expanded="true" />
-            <element signature="e#46458#46459#0" expanded="true" />
-            <element signature="e#47036#47037#0" expanded="true" />
-            <element signature="e#47092#47093#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -519,10 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="119" selection-start-line="119" selection-end-line="119" />
-          <folding>
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -530,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="622" selection-start-line="622" selection-end-line="622" />
-          <folding>
-            <element signature="e#22821#22822#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,21 +556,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="135" selection-start-line="135" selection-end-line="135" />
-          <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/queue/LinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/queue/LoopQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-          <folding>
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShuJuJieGou.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
