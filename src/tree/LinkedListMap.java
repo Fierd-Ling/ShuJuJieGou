@@ -62,14 +62,32 @@ public class LinkedListMap<K,V> {
         node.next=add(k,v,node.next);
         return node;
     }
+
+    public void remove(K k){
+        head=remove(k,head);
+        System.out.println(head);
+    }
+
+    private Node remove(K k,Node node){
+        if(node==null){
+            return null;
+        }
+        if(node.k.equals(k)){
+            return node.next;
+        }
+        node.next=remove(k,node.next);
+        return node;
+    }
 }
 
 class TestLinkedListMap{
     public static void main(String[] args) {
         LinkedListMap<String,Integer> linkedListMap= new LinkedListMap<>();
-        for(int x=0;x<4;x++){
+        for(int x=0;x<10;x++){
             String str=""+x;
             linkedListMap.add(str,x);
         }
+        linkedListMap.remove("5");
+
     }
 }
