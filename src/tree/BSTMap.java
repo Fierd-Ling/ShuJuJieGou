@@ -41,7 +41,7 @@ public class BSTMap<K extends Comparable<K>,V> {
     }
 
     /**
-     * 私有类。递归添加
+     * 私有类,递归添加
      * */
     private Node add(K k,V v,Node node){
         if(node==null){
@@ -65,7 +65,7 @@ public class BSTMap<K extends Comparable<K>,V> {
      * */
     public void add(K k,V v){
         root=add(k,v,root);
-        System.out.println(root.toString());
+        //System.out.println(root.toString());
     }
 
     /**
@@ -93,36 +93,73 @@ public class BSTMap<K extends Comparable<K>,V> {
         }
     }
 
+    public void  remove(K k){
+        System.out.println(root);
+        root=remove(root,k);
+        System.out.println(root);
+    }
 
-    /**
-     * 私有类，递归调用查找value
-     * */
-    private  V remove(K k,Node node){
-        // 节点为空表示已经到了尽头
+    private Node remove(Node node,K k){
         if(node==null){
             return null;
         }
         if(node.k.equals(k)){
-            V removeV=node.v;
-
-
-            return removeV;
+            // 删除节点是叶子
+            if(node.left==null&&node.right==null){
+                return null;
+            }
+            if(node.left!=null&&node.right==null){
+                // 只有左孩子
+                node=node.left;
+                return node;
+            }
+            if(node.right!=null&&node.left==null){
+                // 只有右孩子
+                node=node.right;
+                return node;
+            }
+            // 左右孩子都有
+            Node point=node.right;
+            while(point.left!=null){
+                // 进行预判如果这个节点是叶子节点的父节点的父节点就退出
+                if(point.left.left==null){
+                    break;
+                }
+                // 找到右子树最小的节点,最小的节点只能右子树的最左边的叶子节点
+                point=point.left;
+            }
+            node.k=point.left.k;
+            node.v=point.left.v;
+            // 将右子树移动到原来的最小节点的位置
+            point.left=point.left.right;
+            return node;
         }
-        if (node.k.compareTo(k)>0){
-            return remove(k,node.left);
-        }else {
-            return remove(k,node.right);
+        if(node.k.compareTo(k)>0){
+            node.left=remove(node.left,k);
+            return node;
+        }else{
+            node.right=remove(node.right,k);
+            return node;
         }
+
     }
+
+
+
+
 }
 
 class TestBSTMap{
     public static void main(String[] args) {
-        BSTMap<String,Integer> bstMap=new BSTMap<>();
-        bstMap.add("3",3);
-        bstMap.add("0",7);
-        bstMap.add("1",1);
-        bstMap.add("2",2);
-        System.out.println(bstMap.getValue(""));
+        BSTMap<Integer,Integer> bstMap=new BSTMap<>();
+        bstMap.add(50,2);
+        bstMap.add(40,2);
+        bstMap.add(30,2);
+        bstMap.add(45,2);
+        bstMap.add(41,2);
+        bstMap.add(46,2);
+        bstMap.add(42,2);
+        bstMap.add(43,2);
+        bstMap.remove(40);
     }
 }

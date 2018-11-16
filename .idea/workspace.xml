@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10918d5a-6eb9-42ca-a4cc-706b9018f30e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/tree/LinkedListMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/LinkedListMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/BSTMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/BSTMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,29 +38,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="exclude" value="1" />
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="5" />
           <entry key="iml" value="3" />
-          <entry key="java" value="72" />
+          <entry key="java" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git exclude file" value="1" />
-          <entry key="Git file" value="3" />
+          <entry key="Git file" value="5" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="72" />
+          <entry key="JAVA" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="32" />
-          <entry key="java" value="19051" />
+          <entry key="gitignore" value="33" />
+          <entry key="java" value="21286" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Git file" value="32" />
-          <entry key="JAVA" value="19051" />
+          <entry key="Git file" value="33" />
+          <entry key="JAVA" value="21286" />
         </counts>
       </usages-collector>
     </session>
@@ -68,20 +70,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tree/BSTMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="114" column="9" lean-forward="true" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tree/LinkedListMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+            <state relative-caret-position="130">
+              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+              <folding>
+                <element signature="e#1433#1434#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,6 +95,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>false</find>
+      <find>5</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,9 +127,10 @@
         <option value="$PROJECT_DIR$/src/list/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/BST.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/tree/BSTMap.java" />
         <option value="$PROJECT_DIR$/src/tree/LinkedListMap.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/tree/TestAdd.java" />
+        <option value="$PROJECT_DIR$/src/tree/BSTMap.java" />
       </list>
     </option>
   </component>
@@ -141,7 +140,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -173,13 +172,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ShuJuJieGou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShuJuJieGou" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="BSTMap.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -193,7 +185,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/ShuJuJieGou.iml&#10;G:/ShuJuJieGou/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542333988068" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542357900960" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/新建文件夹/fiter/20457-钟凌云-中台后端" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -203,6 +195,7 @@
       <recent name="com.hande.test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ShuJuJieGou\src\tree" />
       <recent name="G:\ShuJuJieGou\src\list" />
       <recent name="G:\ShuJuJieGou\src" />
     </key>
@@ -219,17 +212,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestLinkedListMap">
-    <configuration name="DiGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DiGui" />
+  <component name="RunManager" selected="Application.TestBSTMap">
+    <configuration name="TestAdd (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestAdd" />
       <module name="ShuJuJieGou" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Solution" />
+    <configuration name="TestAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.TestAdd" />
       <module name="ShuJuJieGou" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -274,19 +273,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.DiGui" />
       <item itemvalue="Application.TestBST" />
       <item itemvalue="Application.TestBSTMap" />
       <item itemvalue="Application.TestLinkedListMap" />
+      <item itemvalue="Application.TestAdd" />
+      <item itemvalue="Application.TestAdd (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestLinkedListMap" />
         <item itemvalue="Application.TestBSTMap" />
+        <item itemvalue="Application.TestAdd (1)" />
+        <item itemvalue="Application.TestAdd" />
+        <item itemvalue="Application.TestLinkedListMap" />
         <item itemvalue="Application.TestBST" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.DiGui" />
       </list>
     </recent_temporary>
   </component>
@@ -322,12 +321,12 @@
       <workItem from="1542249422409" duration="49000" />
       <workItem from="1542249495616" duration="17103000" />
       <workItem from="1542281204528" duration="2028000" />
-      <workItem from="1542331377384" duration="2636000" />
+      <workItem from="1542331377384" duration="20036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142560000" />
+    <option name="totallyTimeSpent" value="159960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,9 +338,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.2165992" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" weight="0.2165992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -352,14 +352,14 @@
       <window_info anchor="bottom" id="JRebel Console" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.6510949" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49865046" visible="true" weight="0.8218978" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49865046" visible="true" weight="0.62299854" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.23649634" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.329429" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013495" side_tool="true" weight="0.44233575" />
       <window_info anchor="bottom" id="JRebel remote servers log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32846716" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32751092" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932525" weight="0.270073" />
@@ -386,7 +386,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.6510949" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865046" weight="0.0919708" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49865046" visible="true" weight="0.22773723" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.23649634" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -396,7 +396,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32846716" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932525" visible="true" weight="0.270073" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932525" weight="0.270073" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -586,27 +586,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ShuJuJieGou.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/BSTMap.java">
+    <entry file="file://$PROJECT_DIR$/src/tree/LinkedListMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="114" column="9" lean-forward="true" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+        <state relative-caret-position="293">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/LinkedListMap.java">
+    <entry file="file://$PROJECT_DIR$/src/tree/TestAdd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+        <state relative-caret-position="97">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/BSTMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+          <folding>
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
