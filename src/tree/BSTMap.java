@@ -1,5 +1,8 @@
 package tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author ZhongLingYun
  * @Title: BSTMap
@@ -144,22 +147,39 @@ public class BSTMap<K extends Comparable<K>,V> {
 
     }
 
-
-
-
+    /**
+     * 层序遍历树/广度优先算法
+     * */
+    public void levelOrder(){
+        // 链表实现的队列
+        Queue<Node> queue=new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            // 队列非空
+            Node queueNode=queue.remove();
+            System.out.println(queueNode.v);
+            if(queueNode.left!=null){
+                queue.add(queueNode.left);
+            }
+            if(queueNode.right!=null){
+                queue.add(queueNode.right);
+            }
+        }
+    }
 }
 
 class TestBSTMap{
     public static void main(String[] args) {
         BSTMap<Integer,Integer> bstMap=new BSTMap<>();
-        bstMap.add(50,2);
+        bstMap.add(50,21);
         bstMap.add(40,2);
-        bstMap.add(30,2);
-        bstMap.add(45,2);
-        bstMap.add(41,2);
-        bstMap.add(46,2);
-        bstMap.add(42,2);
-        bstMap.add(43,2);
-        bstMap.remove(40);
+        bstMap.add(30,23);
+        bstMap.add(45,25);
+        bstMap.add(41,22);
+        bstMap.add(46,24);
+        bstMap.add(42,233);
+        bstMap.add(43,26);
+        //bstMap.remove(40);
+        bstMap.levelOrder();
     }
 }

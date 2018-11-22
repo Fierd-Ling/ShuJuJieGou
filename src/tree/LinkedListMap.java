@@ -40,6 +40,9 @@ public class LinkedListMap<K,V> {
         size=0;
     }
 
+    /**
+     * 私有类，进行remove的递归
+     */
     public void add(K k,V v){
         head=add(k,v,head);
         System.out.println(head);
@@ -63,9 +66,11 @@ public class LinkedListMap<K,V> {
         return node;
     }
 
+    /**
+     *移除某一元素
+     * */
     public void remove(K k){
         head=remove(k,head);
-        System.out.println(head);
     }
 
     private Node remove(K k,Node node){
@@ -88,6 +93,5 @@ class TestLinkedListMap{
             linkedListMap.add(str,x);
         }
         linkedListMap.remove("5");
-
     }
 }

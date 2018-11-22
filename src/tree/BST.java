@@ -141,7 +141,6 @@ public class BST<E extends Comparable<E>> {
             return exist(node.right,e);
         }
     }
-
 }
 
 class TestBST{
