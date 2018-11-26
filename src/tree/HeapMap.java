@@ -4,168 +4,167 @@ import java.util.Arrays;
 
 /**
  * @author ZhongLingYun
- * @Title: Heap
- * @Description: 堆实现
- * @date 2018/11/229:52
+ * @Title: HeapMap
+ * @Description: 优先队列
+ * @date 2018/11/2614:37
  */
-public class HeapMap<E extends Comparable<E>>{
-    private int cup=8;
+public class HeapMap<T extends Comparable<T>> {
+
+    /**
+     * @Description: 动态数组
+     * @param:
+     * @return:
+     * @auther: ZhongLingYun
+     * @date: 2018/11/26 15:11
+     */
+    class Array<E>{
+        int starSize=10;
+
+        int size=0;
+
+        E[] array= (E[]) new Object[starSize];
+
+        /**
+         * @Description: TODO
+         * @param: [e]
+         * @return: void
+         * @auther: ZhongLingYun
+         * @date: 2018/11/26 16:53
+         */
+        public void add(E e){
+            array[size]=e;
+            change();
+            size++;
+        }
+
+        /**
+         * @Description: 获取数组内容
+         * @param: [position]
+         * @return: E
+         * @auther: ZhongLingYun
+         * @date: 2018/11/26 15:03
+         */
+        public E get(int position){
+            if(0>position||position>size-1){
+                throw  new RuntimeException("数组下标越界");
+            }
+            return array[position];
+        }
+
+        /**
+         * @Description: 修改数组中的值
+         * @param: [position, e]
+         * @return: void
+         * @auther: ZhongLingYun
+         * @date: 2018/11/26 16:53
+         */
+        public void set(int position,E e){
+            if (position<0||position>size-1){
+                throw new RuntimeException("数组下标越界");
+            }
+            array[position]=e;
+        }
+
+        /**
+         * @Description: 改变数组大小
+         * @param: []
+         * @return: void
+         * @auther: ZhongLingYun
+         * @date: 2018/11/26 14:55
+         */
+        private void change(){
+            if (array.length<size*2){
+                array= Arrays.copyOf(array,array.length*2);
+                return;
+            }
+            if (array.length>size*4&&size>3){
+                array=Arrays.copyOf(array,array.length/2);
+                return;
+            }
+        }
+
+        @Override
+        public String toString() {
+            return "Array{" +
+                    "array=" + Arrays.toString(array) +
+                    '}';
+        }
+    }
+
+    private Array<T> array =new Array<>();
 
     private int size=0;
 
-    private E[] arrays;
-
-    public HeapMap(){
-        arrays=(E[]) new Object[cup];
-    }
-
     /**
-     * 添加一个元素
+     * @Description: 给堆中添加一个元素
+     * @param: [t]
+     * @return: void
+     * @auther: ZhongLingYun
+     * @date: 2018/11/26 17:34
      */
-    public void add(E e){
-        arrays[size]=e;
-        // 上浮保证堆性质
+    public void add(T t){
+        array.add(t);
         lift(size);
         size++;
-        expend();
+        System.out.println(array.toString());
     }
 
     /**
-     * 查看堆中最大的元素是哪个
-     * */
-    public E kookMax(){
-        if(size==0){
-            return null;
-        }
-        return arrays[0];
-    }
-
-    /**
-     * 从堆中取出堆顶部的元素
-     * */
-    public E getTop(){
-        if (size==0){
-            return null;
-        }
-        E e=kookMax();
-        // 先把最后一个元素放在顶部维持树结构
-        arrays[0]=arrays[size-1];
-        arrays[size-1]=null;
-        down(0);
-    }
-
-    private void down(int position){
-        boolean flag=true;
-        while(flag){
-
-
-
-        }
-
-    }
-
-    /**
-     * 返回左右孩子大的孩子的位置
-     * */
-    private int compareChild(int position){
-        int left=getLeftChild(position);
-        int right=getRightChild(position);
-        if(left!=-1&&right==-1){
-            return left;
-        }
-        if (left==-1&&right!=-1){
-            return right;
-        }
-        if(left!=-1&&right!=-1){
-            E leftChile=arrays[left];
-            E rightChild=arrays[right];
-            boolean flag=leftChile.compareTo(rightChild)>0;
-            if(flag){
-                return left;
-            }
-            return right;
-        }
-        // 没有孩子，已经到叶子节点了
-        return position;
-
-    }
-
-    /**
-     * 获取左孩子的位置
-     * */
-    private int getLeftChild(int position){
-       int left=position*2+1;
-       if (left>size){
-           // 超过
-           return -1;
-       }
-       return left;
-    }
-
-    /**
-     * 获取右孩子的位置
-     * */
-    private int getRightChild(int position){
-        int right=position*2+2;
-        if (right>size){
-            return -1;
-        }
-        return right;
-    }
-
-
-    /**
-     * 进行上浮保证堆性质
-     * */
+     * @Description: 保持下虑保持二叉堆的性质
+     * @param: [position]
+     * @return: void
+     * @auther: ZhongLingYun
+     * @date: 2018/11/26 17:26
+     */
     private void lift(int position){
-        if(position==0){
-            // root节点不能再继续上浮
+        int fatherStation=getFatherStation(position);
+        boolean flag=array.get(position).compareTo(array.get(fatherStation))>0;
+        while(flag){
+            change(fatherStation,position);
+            position=fatherStation;
+            fatherStation=getFatherStation(position);
+            flag=array.get(position).compareTo(array.get(fatherStation))>0;
+        }
+    }
+
+    /**
+     * @Description: 如果子节点大于父节点交换位置
+     * @param: [father, son]
+     * @return: void
+     * @auther: ZhongLingYun
+     * @date: 2018/11/26 17:23
+     */
+    private void change(int father,int son){
+        boolean flag=array.get(son).compareTo(array.get(father))>0;
+        if (flag){
+            // 如果子节点大于父节点交换位置
+            T t=array.get(father);
+            array.set(father,array.get(son));
+            array.set(son,t);
             return;
         }
-        boolean flag=true;
-        while(position!=0&&flag){
-            int fatherPosition=getFatherPosition(position);
-            changeToMax(fatherPosition,position);
-            position=fatherPosition;
-            flag=arrays[position].compareTo(arrays[getFatherPosition(position)])>0;
-        }
     }
 
     /**
-     * 获取父节点位置
-     * */
-    private int getFatherPosition(int position){
-        // 索引从0开始计算
-        return position/2;
-    }
-
-    /**
-     * 父子节点进行交换,保证父节点比子节点大
-     * */
-    private void changeToMax(int father,int son){
-        if(arrays[son].compareTo(arrays[father])>0){
-            E e=arrays[father];
-            arrays[father]=arrays[son];
-            arrays[son]=arrays[father];
+     * @Description: 获取父节点的位置
+     * @param: [position]
+     * @return: int
+     * @auther: ZhongLingYun
+     * @date: 2018/11/26 17:33
+     */
+    private int getFatherStation(int position) {
+        if (size == 0) {
+            return 0;
         }
+        return position / 2;
     }
+}
 
-    /**
-     * 数组扩容
-     * */
-    private void expend(){
-        // 当数组的长度/2小于存储数据的1/2的时候扩容
-        if(arrays.length/2<size){
-            arrays= Arrays.copyOf(arrays,arrays.length*2);
+class TestHeapMap{
+    public static void main(String[] args) {
+        HeapMap<Integer> heapMap= new HeapMap<>();
+        for (int x=0;x<10;x++){
+            heapMap.add(x);
         }
-    }
-
-    @Override
-    public String toString() {
-        return "HeapMap{" +
-                "cup=" + cup +
-                ", size=" + size +
-                ", arrays=" + Arrays.toString(arrays) +
-                '}';
     }
 }
