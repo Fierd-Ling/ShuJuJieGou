@@ -109,8 +109,43 @@ public class HeapMap<T extends Comparable<T>> {
         System.out.println(array.toString());
     }
 
+    public T get(){
+        // 优先队列中第一个一定是最大的
+        T t=array.get(0);
+        size--;
+        // 将最后一个元素放root，保证树的结构
+        array.set(0,array.get(size));
+        drop(0);
+        // 最后一个置为null
+        array.set(size,null);
+        System.out.println(array.toString());
+        return t;
+    }
+
     /**
-     * @Description: 保持下虑保持二叉堆的性质
+     * @Description: 下虑,保证堆的特性
+     * @param: [position]
+     * @return: void
+     * @auther: ZhongLingYun
+     * @date: 2018/11/27 18:28
+     */
+    private void drop(int position){
+        int son=getChild(position);
+        // 如果父节点小于最大的子节点
+        boolean flag=array.get(position).compareTo(array.get(son))<0;
+        while (flag){
+            T t=array.get(position);
+            // 子节点放置在父节点
+            array.set(position,array.get(son));
+            array.set(son,t);
+            position=son;
+            son=getChild(position);
+            flag=array.get(position).compareTo(array.get(son))<0;
+        }
+    }
+
+    /**
+     * @Description: 上虑保持二叉堆的性质
      * @param: [position]
      * @return: void
      * @auther: ZhongLingYun
@@ -153,18 +188,53 @@ public class HeapMap<T extends Comparable<T>> {
      * @date: 2018/11/26 17:33
      */
     private int getFatherStation(int position) {
-        if (size == 0) {
+        if (position == 0) {
             return 0;
         }
         return position / 2;
+    }
+
+    /**
+     * @Description: 获取两个孩子中最大的孩子的位置
+     * @param: [position]
+     * @return: int
+     * @auther: ZhongLingYun
+     * @date: 2018/11/27 18:24
+     */
+    private int getChild(int position){
+        boolean leftChild=position*2+1<=size-1;
+        boolean rightChild=position*2+2<=size-1;
+        // 只有左孩子
+        if (leftChild && !rightChild){
+            return position*2+1;
+        }
+        // 只有右孩子
+        if (!leftChild && rightChild){
+            return position*2+2;
+        }
+        // 左右孩子都没有
+        if (!leftChild && !rightChild){
+            return position;
+        }
+        // 左右孩子都有
+        boolean compare=array.get(position*2+1).compareTo(array.get(position*2+2))>0;
+        if (compare){
+            return position*2+1;
+        }
+        return position*2+2;
     }
 }
 
 class TestHeapMap{
     public static void main(String[] args) {
         HeapMap<Integer> heapMap= new HeapMap<>();
+        for (int x=0;x<1000;x++){
+            int d= (int) (Math.random()*10000);
+            heapMap.add(d);
+        }
+        System.out.println();
         for (int x=0;x<10;x++){
-            heapMap.add(x);
+            heapMap.get();
         }
     }
 }
